@@ -18,6 +18,7 @@ privacy/index.html
 assets/styles.css
 assets/favicon.svg
 .nojekyll
+CNAME
 README.md
 ```
 
@@ -77,8 +78,12 @@ necessary. Pages may use a managed deployment workflow internally.
 
 ## 2. Configure a custom domain and DNS
 
-No real domain or `CNAME` file is included. `example.com`, `kleine.example.com`,
-`OWNER`, and `REPOSITORY` below are placeholders; replace them with your values.
+The custom hostname is `kleine.superalloy.nl`, stored in the root `CNAME` file.
+Its DNS record is a CNAME from `kleine` to `alloy.github.io` in the
+`superalloy.nl` zone. HTTPS depends on DNS propagation and certificate provisioning.
+To change the hostname, update both the GitHub Pages setting and the `CNAME` file.
+The instructions below use `example.com`, `kleine.example.com`, `OWNER`, and
+`REPOSITORY` as placeholders; substitute the values for your deployment.
 
 1. Register a domain you control. First verify it for GitHub Pages in your
    account/organization **Settings → Pages**, using GitHub's supplied DNS TXT
