@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kleine — Personal AI Assistant</title>
+    <meta name="description" content="Kleine is a private, OpenClaw-powered personal AI assistant that helps authorized users with email, calendars, and everyday organization.">
+    <meta name="color-scheme" content="light dark">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Kleine">
+    <meta property="og:title" content="Kleine — Personal AI Assistant">
+    <meta property="og:description" content="Your little helping hand. A private AI assistant for authorized personal use.">
+    <script>
+      (() => {
+        const param = new URLSearchParams(window.location.search).get("scoutTheme");
+        const theme =
+          param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Kleine home">
+        <span class="brand-mark" aria-hidden="true">k<span></span></span>
+        <span>Kleine</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="./" aria-current="page">Home</a>
+        <a href="privacy/">Privacy Policy</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">A little help, just for you</p>
+        <h1 id="hero-title">Kleine</h1>
+        <p class="tagline">Your little helping hand.</p>
+        <p class="hero-description">A privately operated AI assistant powered by OpenClaw,
+          here to help its authorized users with the everyday.</p>
+        <p class="name-note">From the Dutch for &ldquo;little one.&rdquo;</p>
+      </section>
+
+      <section class="feature-grid" aria-label="Everyday assistance">
+        <article class="card">
+          <span class="card-label" aria-hidden="true">01</span>
+          <h2>A calmer inbox</h2>
+          <p>Help with reading and organizing email, and drafting or sending messages at your request.</p>
+        </article>
+        <article class="card">
+          <span class="card-label" aria-hidden="true">02</span>
+          <h2>Room for your day</h2>
+          <p>Support for managing calendars, keeping track of events, and everyday personal organization.</p>
+        </article>
+        <article class="card">
+          <span class="card-label" aria-hidden="true">03</span>
+          <h2>By your permission</h2>
+          <p>Google services connect through OAuth 2.0. You authorize access to supported services
+            and can revoke it through your Google Account.</p>
+        </article>
+      </section>
+
+      <section class="private-note" aria-labelledby="private-title">
+        <div>
+          <h2 id="private-title">Personal, not public.</h2>
+          <p>Access to Kleine is restricted to explicitly authorized users.
+            It is not offered as a public service. This website provides application
+            information only; there is no sign-in here.</p>
+        </div>
+        <a class="policy-link" href="privacy/">Read the Privacy Policy <span aria-hidden="true">&rarr;</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Kleine &middot; Private AI Assistant</p>
+      <a href="privacy/">Privacy Policy</a>
+    </footer>
+  </body>
+</html>

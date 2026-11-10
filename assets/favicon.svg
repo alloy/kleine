@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    :root {
+      --cp-bg: #f7f4ef;
+      --cp-accent: #b11f4b;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --cp-bg: #3d3b3a;
+        --cp-accent: #fd8ea1;
+      }
+    }
+    rect { fill: var(--cp-bg); }
+    text, circle { fill: var(--cp-accent); }
+    text { font: 600 50px "Segoe UI", Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif; }
+  </style>
+  <rect width="64" height="64" rx="14"/>
+  <text x="17" y="49">k</text>
+  <circle cx="48" cy="15" r="4"/>
+</svg>

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Privacy Policy — Kleine</title>
+    <meta name="description" content="Draft privacy policy for Kleine: Google account access, information use, storage, AI processing, sharing, retention, and revocation. Requires owner review.">
+    <meta name="color-scheme" content="light dark">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Kleine">
+    <meta property="og:title" content="Privacy Policy — Kleine">
+    <meta property="og:description" content="How Kleine handles Google account information. Draft requiring owner review before publication as a final policy.">
+    <script>
+      (() => {
+        const param = new URLSearchParams(window.location.search).get("scoutTheme");
+        const theme =
+          param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="../" aria-label="Kleine home">
+        <span class="brand-mark" aria-hidden="true">k<span></span></span>
+        <span>Kleine</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="../">Home</a>
+        <a href="./" aria-current="page">Privacy Policy</a>
+      </nav>
+    </header>
+
+    <main id="main" class="policy">
+      <header class="policy-header">
+        <p class="eyebrow">Your information</p>
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: <time datetime="2026-11-10">November 10, 2026</time></p>
+      </header>
+
+      <aside class="review-notice" aria-labelledby="review-title">
+        <h2 id="review-title">Draft &mdash; owner review required</h2>
+        <p>This draft describes Kleine&rsquo;s intended use and possible data flows, not a
+          verified audit of its configuration. Before publishing it as a final policy or
+          submitting it to Google, the owner must confirm actual permissions, storage and
+          deletion practices, provider processing and retention, and Limited Use compliance.
+          A dedicated support contact must also be configured.</p>
+      </aside>
+
+      <section aria-labelledby="overview">
+        <h2 id="overview">1. Overview</h2>
+        <p>Kleine is a privately operated AI assistant powered by OpenClaw, intended
+          exclusively for authorized personal use. It is not a public service.</p>
+        <p>This policy concerns information handled by the assistant. This informational
+          website does not connect to Google accounts, collect OAuth credentials, or
+          store access or refresh tokens.</p>
+      </section>
+
+      <section aria-labelledby="access">
+        <h2 id="access">2. Google account access</h2>
+        <p>Kleine accesses Google services through gog (Google Workspace CLI) only after
+          a user explicitly authorizes access using OAuth 2.0. Depending on the permissions
+          granted, it may access Gmail messages, email metadata, calendar events, and other
+          authorized Google account information. Access is limited to the OAuth permissions
+          granted by the user.</p>
+      </section>
+
+      <section aria-labelledby="use">
+        <h2 id="use">3. How information is used</h2>
+        <p>Google account information is used solely to fulfill requests made by authorized
+          users. Examples include reading or organizing email, drafting or sending messages,
+          and managing calendar events, where the granted permissions allow these actions.</p>
+      </section>
+
+      <section aria-labelledby="storage">
+        <h2 id="storage">4. Data storage and security</h2>
+        <p>OAuth credentials and operational data, such as request history and information
+          needed to carry out tasks, may be stored within the assistant&rsquo;s configured
+          environment. This draft does not assert encryption, security certifications, or
+          a fixed retention period.</p>
+        <p><strong>Owner verification required:</strong> confirm what is stored, who can
+          access it, the safeguards in place, and how logs, backups, and deletion are handled.
+          Verify that those safeguards meet the applicable Google API requirements.</p>
+      </section>
+
+      <section aria-labelledby="ai">
+        <h2 id="ai">5. AI processing</h2>
+        <p>Information may be processed by configured AI model providers when necessary
+          to fulfill authorized requests. It does not necessarily remain local to the
+          assistant&rsquo;s environment.</p>
+        <p><strong>Owner verification required:</strong> identify the providers actually
+          used and disclose their relevant processing, retention, and human-access practices.
+          Confirm whether provider terms and settings prevent Google user data from being
+          used to train or improve generalized AI models; do not assume that they do.
+          Do not send Google user data to a provider unless the applicable Google policies
+          and user consent permit the transfer and processing.</p>
+      </section>
+
+      <section aria-labelledby="sharing">
+        <h2 id="sharing">6. Data sharing</h2>
+        <p>Kleine does not sell personal information or use Google user data for advertising.
+          Data may be transmitted to configured service providers, including AI model
+          providers, when required to fulfill authorized requests.</p>
+        <p><strong>Owner verification required:</strong> confirm that actual transfers,
+          provider agreements, and user consent match these disclosures and the applicable
+          Limited Use requirements.</p>
+      </section>
+
+      <section aria-labelledby="retention">
+        <h2 id="retention">7. Retention and revocation</h2>
+        <p>Users can revoke Kleine&rsquo;s Google OAuth access in their
+          <a href="https://myaccount.google.com/connections">Google Account connections settings</a>.
+          Revocation prevents further access using that authorization; it does not
+          automatically delete previously processed information, stored task history,
+          backups, or data retained by service providers.</p>
+        <p><strong>Owner verification required:</strong> document actual retention and
+          deletion practices, including how users can request deletion, before approving
+          this policy. No automatic deletion or specific retention period is promised
+          by this draft.</p>
+      </section>
+
+      <section aria-labelledby="google-policy">
+        <h2 id="google-policy">8. Google API Services User Data Policy</h2>
+        <p>Kleine&rsquo;s use of Google API data must adhere to the
+          <a href="https://developers.google.com/terms/api-services-user-data-policy">Google
+          API Services User Data Policy</a>, including its Limited Use requirements
+          where applicable. These requirements limit data use to permitted user-facing
+          features, restrict transfers and human access, and prohibit advertising and
+          other disallowed uses of covered data, including derived data.</p>
+        <p>This is a statement of applicable obligations, not a claim of established
+          compliance, Google verification, or approval. The owner must verify the
+          assistant&rsquo;s actual behavior and provider arrangements against these
+          requirements before publishing a final compliance statement.</p>
+      </section>
+
+      <section aria-labelledby="website">
+        <h2 id="website">9. This website</h2>
+        <p>These static pages use no analytics, tracking scripts, cookies, third-party
+          fonts, or external runtime dependencies. The hosting provider, GitHub Pages,
+          may process technical request information to serve the site under the
+          <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub Privacy Statement</a>.
+          Hosting-related processing is separate from the assistant&rsquo;s Google account access.</p>
+      </section>
+
+      <section aria-labelledby="contact">
+        <h2 id="contact">10. Contact</h2>
+        <p><strong>Support contact: not yet configured.</strong> Before deployment, the
+          owner must replace this placeholder with a monitored, dedicated support contact
+          for privacy questions and deletion requests, and ensure it meets Google&rsquo;s
+          current contact requirements. Do not substitute a personal email address.
+          This placeholder is not a working contact method.</p>
+      </section>
+
+      <a class="back-link" href="../">&larr; Back to Kleine</a>
+    </main>
+
+    <footer class="site-footer">
+      <p>Kleine &middot; Private AI Assistant</p>
+      <a href="../">Home</a>
+    </footer>
+  </body>
+</html>
