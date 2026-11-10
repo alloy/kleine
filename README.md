@@ -49,10 +49,10 @@ There is no stored theme preference.
   Google policy restrictions, including provider use of Google data for training
   or improving generalized AI models, and obtain required user consent.
 - Establish and describe an actual privacy/deletion request process.
-- Replace the **not yet configured** contact placeholder with a monitored,
-  dedicated support address or public contact method accepted by Google.
-  Configure the required support email in Google Auth Platform as well.
-  Do not publish a personal address.
+- Confirm authorized users can reach the operator through their existing
+  communication channel, as stated in the policy, and check any applicable
+  privacy-law contact obligations. Configure the required user-support email
+  separately in Google Auth Platform; do not publish a personal address on the site.
 - Verify actual behavior against the Google API Services User Data Policy,
   Limited Use requirements, and applicable Gmail/Workspace policies. Replace
   draft language with accurate, owner-approved disclosures; remove the review
@@ -152,6 +152,13 @@ With your actual domain substituted:
 | Privacy policy | `https://kleine.example.com/privacy/` |
 | Authorized domain | `example.com` |
 
+The user-support email is visible to users through the OAuth consent screen.
+It is separate from the privacy policy's contact section, which directs authorized
+users to their existing communication channel with the operator. Google's published
+[privacy-policy requirements](https://support.google.com/cloud/answer/13806988?hl=en)
+do not explicitly require an email or postal address on that page; applicable
+legal obligations may require additional disclosures.
+
 The homepage and policy must be public, on the same domain, and consistent with
 the app's functionality and requested scopes. The homepage links prominently to
 the policy. Absolute `og:url` and canonical metadata are intentionally omitted
@@ -197,7 +204,7 @@ Official references:
 
 ## Deployment checklist
 
-- [ ] Resolve every privacy draft note, configure dedicated support, and approve the final policy.
+- [ ] Resolve every privacy draft note, confirm the existing contact channel, and approve the final policy.
 - [ ] Push to GitHub and enable branch/root Pages publishing.
 - [ ] Verify the custom domain with GitHub; set the Pages hostname, then DNS.
 - [ ] Enable HTTPS; test homepage, policy, navigation, and favicon on the final domain.
